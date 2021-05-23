@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	</head>
+
+	<body>
+		<div class="mui-off-canvas-wrap mui-draggable">
+			<!-- 菜单容器 -->
+			<aside id="mui-off-canvas-left" class="mui-off-canvas-left menu">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!-- 菜单具体展示内容 -->
+						<h3 class="wel">欢迎: 666</h1>
+							<ul class="mui-table-view nav">
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">处理订单</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">订单列表</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">订单统计</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">充值列表</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">充值统计</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">资金明细</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">商户管理</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">收款账号管理</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">管理员</a>
+								</li>
+							</ul>
+					</div>
+				</div>
+			</aside>
+			<!-- 主页面容器 -->
+			<div class="mui-inner-wrap">
+				<!-- 主页面标题 -->
+				<header class="mui-bar mui-bar-nav">
+					<a class="menu mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
+					<h1 class="mui-title">管理后台</h1>
+					<span class="mui-pull-right mui-btn-link logout" style="color:#fff;">退出</span>
+				</header>
+				<div class="mui-content mui-scroll-wrapper">
+					<h4 class="title">处理订单</h4>
+					<!-- 处理订单 -->
+					<div class="mui-scroll con">
+						<div class="btns">
+							<button type="button" class="mui-btn mui-btn-success">批量处理成功</button>
+							<button type="button" class="mui-btn mui-btn-danger">批量处理失败</button>
+							<button type="button" class="mui-btn mui-btn-success">批量锁定</button>
+							<button type="button" class="mui-btn mui-btn-danger">批量解锁</button>
+						</div>
+						<div style="padding: 15px">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-collapse">
+									<a class="mui-navigate-right" href="#">订单号: 111111111</a>
+									<div class="mui-collapse-content">
+										<div style="display: flex;justify-content: space-around;">
+											<p>银行: xxxx</p>
+											<p>金额: ￥666</p>
+
+										</div>
+									</div>
+								</li>
+								<li class="mui-table-view-cell mui-collapse">
+									<a class="mui-navigate-right" href="#">订单号: 222222222</a>
+									<div class="mui-collapse-content">
+										<div style="display: flex;justify-content: space-around;">
+											<p>银行: xxxx</p>
+											<p>金额: ￥888</p>
+
+										</div>
+									</div>
+								</li>
+								<li class="mui-table-view-cell mui-collapse">
+									<a class="mui-navigate-right" href="#">订单号: 333333333</a>
+									<div class="mui-collapse-content">
+										<div style="display: flex;justify-content: space-around;">
+											<p>银行: xxxx</p>
+											<p>金额: ￥999</p>
+
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="btns">
+							<button type="button" class="mui-btn mui-btn-success">批量处理成功</button>
+							<button type="button" class="mui-btn mui-btn-danger">批量处理失败</button>
+						</div>
+					</div>
+					<!-- 订单列表 -->
+					<div class="mui-scroll con">
+						<form class="mui-input-group">
+						    <div class="mui-input-row">
+								<input type="text" class="mui-input-clear" placeholder="订单号">
+						    </div>
+						    <div class="mui-input-row">
+						        <input type="text" class="mui-input-clear" placeholder="商户">
+						    </div>
+							<div class="mui-input-row">
+							    <input type="text" class="mui-input-clear" placeholder="卡号">
+							</div>
+							<div class="mui-input-row">
+							    <input type="text" class="mui-input-clear" placeholder="户名">
+							</div>
+							<div style="display:flex">
+								<select name="" style="border:1px solid #ccc">
+									<option value="">全部</option>
+									<option value="">未处理</option>
+									<option value="">成功</option>
+									<option value="">失败</option>
+								</select>
+								<input type="date" class="mui-input-clear" value="2021-05-21">
+								<input type="date" class="mui-input-clear" value="2021-05-21">
+							</div>
+						</form>
+						<div class="btns">
+							<button style="width: 30%" type="button" class="mui-btn mui-btn-success">查询</button>
+							<button style="width: 30%" type="button" class="mui-btn mui-btn-success">批量锁定</button>
+							<button style="width: 30%" type="button" class="mui-btn mui-btn-danger">批量解锁</button>
+						</div>
+						<div style="padding: 15px">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-collapse">
+									<a class="mui-navigate-right" href="#">订单号: 11111</a>
+									<div class="mui-collapse-content">
+										<div style="display: flex;justify-content: space-around;">
+											<p>银行: xxxx</p>
+											<p>金额: ￥66886</p>
+										</div>
+
+									</div>
+
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 订单统计 -->
+					<div class="mui-scroll con">
+						<form class="mui-input-group"  style="padding-bottom:10px">
+							<div>
+								<input type="date" class="mui-input-clear" value="2021-05-21">
+								<input type="date" class="mui-input-clear" value="2021-05-21">
+								<button style="width: 80%;margin-left: 10%" type="button" class="mui-btn mui-btn-success">查询</button>
+							</div>
+						</form>
+						<div style="padding: 15px">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-collapse">
+									<a class="mui-navigate-right" href="#">ID: 11111</a>
+									<div class="mui-collapse-content">
+										<div style="display: flex;justify-content: space-around;">
+											<p>商户: xxxx</p>
+											<p>金额: ￥66886</p>
+										</div>
+					
+									</div>
+					
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 充值列表 -->
+					<div class="mui-scroll con">
+						<form class="mui-input-group"  style="padding-bottom:10px">
+							<div class="mui-input-row">
+								<input type="text" class="mui-input-clear" placeholder="商户">
+							</div>
+							<div>
+								<input type="date" class="mui-input-clear" value="2021-05-21">
+								<input type="date" class="mui-input-clear" value="2021-05-21">
+								<button style="width: 80%;margin-left: 10%" type="button" class="mui-btn mui-btn-success">查询</button>
+							</div>
+						</form>
+						<div style="padding: 15px">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-collapse">
+									<a class="mui-navigate-right" href="#">ID: 11111</a>
+									<div class="mui-collapse-content">
+										<div style="display: flex;justify-content: space-around;">
+											<p>商户: xxxx</p>
+											<p>金额: ￥66886</p>
+										</div>
+					
+									</div>
+					
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 充值统计 -->
+					<div class="mui-scroll con">
+						<form class="mui-input-group" style="padding-bottom:10px">
+							<div>
+								<input type="date" class="mui-input-clear" value="2021-05-21">
+								<input type="date" class="mui-input-clear" value="2021-05-21">
+								<button style="width: 80%;margin-left: 10%" type="button" class="mui-btn mui-btn-success">查询</button>
+							</div>
+						</form>
+						<div style="padding: 15px">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-collapse">
+									<a class="mui-navigate-right" href="#">ID: 11111</a>
+									<div class="mui-collapse-content">
+										<div style="display: flex;justify-content: space-around;">
+											<p>商户: xxxx</p>
+											<p>金额: ￥66886</p>
+										</div>
+					
+									</div>
+					
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 资金明细 -->
+					<div class="mui-scroll con">
+						<form class="mui-input-group"  style="margin-bottom:10px">
+						    <div class="mui-input-row">
+						        <input type="text" class="mui-input-clear" placeholder="商户">
+						    </div>
+							<div style="display:flex">
+								<select name="" style="border:1px solid #ccc">
+									<option value="">全部</option>
+									<option value="">未处理</option>
+									<option value="">成功</option>
+									<option value="">失败</option>
+								</select>
+								<input type="date" class="mui-input-clear" value="2021-05-21">
+								<input type="date" class="mui-input-clear" value="2021-05-21">
+							</div>
+						</form>
+						<button style="width: 80%;margin-left: 10%" type="button" class="mui-btn mui-btn-success">查询</button>
+						<div style="padding: 15px">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-collapse">
+									<a class="mui-navigate-right" href="#">订单号: 11111</a>
+									<div class="mui-collapse-content">
+										<div style="display: flex;justify-content: space-around;">
+											<p>银行: xxxx</p>
+											<p>金额: ￥66886</p>
+										</div>
+					
+									</div>
+					
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 商户管理 -->
+					<div class="mui-scroll con">
+						<button style="width: 30%;margin-left: 15px" type="button" class="addsh mui-btn mui-btn-success">添加商户</button>
+						<div class="modal">
+							<div class="content">
+								<h4 class="modal-title">添加商户 <span class="close">X</span></h4>
+								<form class="mui-input-group">
+								    <div class="mui-input-row">
+								        <label>账号</label>
+								    <input type="text" class="mui-input-clear" placeholder="账号">
+								    </div>
+								    <div class="mui-input-row">
+								        <label>商户名</label>
+								        <input type="text" class="mui-input-clear" placeholder="商户名">
+								    </div>
+									<div class="mui-input-row">
+									        <label>密码</label>
+									        <input type="password" class="mui-input-clear" placeholder="请输入密码">
+									</div>
+									<div class="mui-input-row">
+									        <label>确认密码</label>
+									        <input type="password" class="mui-input-clear" placeholder="请确认密码">
+									</div>
+									<div class="mui-input-row">
+									    <label>MD5KEY</label>
+									    <input type="text" placeholder="MD5KEY">
+										<button type="button" class="mui-btn mui-btn-primary" style="position: absolute;right: 15px;" >随机</button>
+									</div>
+									<div class="mui-input-row">
+									    <label>费率类型</label>
+										<span style="line-height: 40px;">
+											<input type="radio">提交时扣除
+											<input type="radio">充值时扣除
+										</span>
+									    
+									</div>
+									<div class="mui-input-row">
+									    <label>费率</label>
+									    <input type="text" class="mui-input-clear" placeholder="费率 千分之">
+									</div>
+									<div class="mui-input-row">
+									    <label>通费道</label>
+									    <input type="text" class="mui-input-clear" placeholder="通费道">
+									</div>
+								    
+								</form>
+								<div class="mui-button-row">
+								    <button type="button" class="mui-btn mui-btn-success" >立即提交</button>
+								</div>
+							</div>
+						</div>
+						<div style="padding: 15px">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-collapse">
+									<a class="mui-navigate-right" href="#">ID: 11111</a>
+									<div class="mui-collapse-content">
+										<div style="display: flex;justify-content: space-around;">
+											<p>商户名: xxxx</p>
+											<p>金额: ￥66886</p>
+										</div>
+					
+									</div>
+					
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 收款账号管理 -->
+					<div class="mui-scroll con acc">
+						<button style="width: 30%;margin-left: 15px" type="button" class="addsh mui-btn mui-btn-success">添加账号</button>
+						<div class="modal">
+							<div class="content">
+								<h4 class="modal-title">添加账号 <span class="close">X</span></h4>
+								<form class="mui-input-group">
+								    <div class="mui-input-row">
+								        <label>类型</label>
+										<input type="text" class="mui-input-clear" placeholder="收款账号类型">
+								    </div>
+									<div class="mui-input-row">
+									    <label>户名</label>
+										<input type="text" class="mui-input-clear" placeholder="户名">
+									</div>
+									<div class="mui-input-row">
+									    <label>账号</label>
+										<input type="text" class="mui-input-clear" placeholder="账号">
+									</div>
+									<div class="mui-input-row">
+									    <label>开户行</label>
+										<input type="text" class="mui-input-clear" placeholder="开户行">
+									</div>
+								</form>
+								<div class="mui-button-row">
+								    <button type="button" class="mui-btn mui-btn-success" >立即提交</button>
+								</div>
+							</div>
+						</div>
+						<div style="padding: 15px">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-collapse">
+									<a class="mui-navigate-right" href="#">ID: 11111</a>
+									<div class="mui-collapse-content">
+										<div style="display: flex;justify-content: space-around;">
+											<p>类型: xxxx</p>
+											<p>户名: ￥66886</p>
+										</div>
+										<div style="display: flex;justify-content: space-around;line-height: 30px;border-top:1px solid #ccc;padding-top:10px;">
+											<p>操作:</p>
+											<button type="button" class="edit mui-btn-primary">编辑</button>
+											<button type="button" class="del mui-btn-danger">删除</button>
+										</div>
+					
+									</div>
+					
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 管理员 -->
+					<div class="mui-scroll con gl">
+						<button style="width: 30%;margin-left: 15px" type="button" class="addsh mui-btn mui-btn-success">添加管理员</button>
+						<div class="modal">
+							<div class="content">
+								<h4 class="modal-title">添加管理员 <span class="close">X</span></h4>
+								<form class="mui-input-group">
+								    <div class="mui-input-row">
+								        <label>账号</label>
+										<input type="text" class="mui-input-clear" placeholder="账号">
+								    </div>
+									<div class="mui-input-row">
+									        <label>密码</label>
+									        <input type="password" class="mui-input-clear" placeholder="请输入密码">
+									</div>
+									<div class="mui-input-row">
+									        <label>确认密码</label>
+									        <input type="password" class="mui-input-clear" placeholder="请确认密码">
+									</div>
+								</form>
+								<div class="mui-button-row">
+								    <button type="button" class="mui-btn mui-btn-success" >立即提交</button>
+								</div>
+							</div>
+						</div>
+						<div class="modal edit-modal">
+							<div class="content">
+								<h4 class="modal-title">编辑 <span class="close">X</span></h4>
+								<form class="mui-input-group">
+								    <div class="mui-input-row">
+								        <label>账号</label>
+										<input type="text" class="mui-input-clear" placeholder="账号">
+								    </div>
+									<div class="mui-input-row">
+									        <label>密码</label>
+									        <input type="password" class="mui-input-clear" placeholder="请输入密码">
+									</div>
+								</form>
+								<div class="mui-button-row">
+								    <button type="button" class="mui-btn mui-btn-success" >立即提交</button>
+								</div>
+							</div>
+						</div>
+						<div class="modal fpqx">
+							<div class="content">
+								<h4 class="modal-title">分配权限 <span class="close">X</span></h4>
+								<form class="mui-input-group">
+								    <div class="mui-input-row">
+								        <label>账号</label>
+										<span style="line-height: 40px;">1111</span>
+								    </div>
+									<div class="mui-input-row">
+										<label>权限</label>
+									</div>
+									<div>
+										<div class="mui-input-row mui-checkbox mui-left">
+										  <label>处理订单</label>
+										  <input name="checkbox1" value="Item 1" type="checkbox" checked>
+										</div>
+										<div class="mui-input-row mui-checkbox mui-left">
+										  <label>订单列表</label>
+										  <input name="checkbox1" value="Item 1" type="checkbox" checked>
+										</div>
+										<div class="mui-input-row mui-checkbox mui-left">
+										  <label>订单统计</label>
+										  <input name="checkbox1" value="Item 1" type="checkbox" checked>
+										</div>
+										<div class="mui-input-row mui-checkbox mui-left">
+										  <label>充值列表</label>
+										  <input name="checkbox1" value="Item 1" type="checkbox" checked>
+										</div>
+										<div class="mui-input-row mui-checkbox mui-left">
+										  <label>充值统计</label>
+										  <input name="checkbox1" value="Item 1" type="checkbox" checked>
+										</div>
+										<div class="mui-input-row mui-checkbox mui-left">
+										  <label>资金明细</label>
+										  <input name="checkbox1" value="Item 1" type="checkbox" checked>
+										</div>
+										<div class="mui-input-row mui-checkbox mui-left">
+										  <label>商户管理</label>
+										  <input name="checkbox1" value="Item 1" type="checkbox" checked>
+										</div>
+										<div class="mui-input-row mui-checkbox mui-left">
+										  <label>收款账号管理</label>
+										  <input name="checkbox1" value="Item 1" type="checkbox" checked>
+										</div>
+										<div class="mui-input-row mui-checkbox mui-left">
+										  <label>管理员</label>
+										  <input name="checkbox1" value="Item 1" type="checkbox" checked>
+										</div>
+									</div>
+								</form>
+								<div class="mui-button-row">
+								    <button type="button" class="mui-btn mui-btn-success" >立即提交</button>
+								</div>
+							</div>
+						</div>
+						<div style="padding: 15px">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-collapse">
+									<a class="mui-navigate-right" href="#">ID: 11111</a>
+									<div class="mui-collapse-content">
+										<div style="display: flex;justify-content: space-around;">
+											<p>账号: xxxx</p>
+											<p>状态: 正常</p>
+										</div>
+										<div style="display: flex;justify-content: space-around;line-height: 30px;border-top:1px solid #ccc;padding-top:10px;">
+											<p>操作:</p>
+											<button type="button" class="edit mui-btn-primary">编辑</button>
+											<button type="button" class="del mui-btn-danger">删除</button>
+											<button type="button" class="qx mui-btn-primary">分配权限</button>
+										</div>
+					
+									</div>
+					
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			
+		</div>
+		
+		<script src="js/mui.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,87 @@
+li {
+	list-style: none;
+}
+
+select {
+	margin-bottom: 0
+}
+
+ul {
+	font-size: 14px;
+	color: #8f8f94;
+}
+
+.wel {
+	padding: 0 20px;
+	color: #fff;
+	margin: 30px 0 20px;
+}
+
+.mui-bar {
+	background-color: #333;
+	color: #fff;
+}
+
+.mui-bar * {
+	color: #fff;
+}
+
+.mui-btn {
+	padding: 10px;
+}
+
+/* .mui-table-view-cell.mui-active {
+				background-color: #0062CC;
+			} */
+
+.nav {
+	background-color: #333;
+}
+
+.title {
+	text-align: center;
+	line-height: 40px;
+	border-bottom: 1px solid #333;
+}
+
+.btns {
+	padding: 0 15px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.btns button {
+	width: 40%;
+	margin-top: 10px;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	height: 100%;
+	width: 100%;
+	padding: 15px;
+	display: none;
+	align-items: center;
+	background-color: rgba(0, 0, 0, .3);
+}
+
+.modal .content {
+	width: 100%;
+	height: auto;
+	padding-bottom: 15px;
+	background-color: #fff;
+}
+
+.modal-title {
+	line-height: 40px;
+	padding: 0 15px;
+	background-color: #f8f8f8;
+}
+
+.modal-title span {
+	float: right;
+}
