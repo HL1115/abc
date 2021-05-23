@@ -35,15 +35,16 @@
 				m('.mui-content').on('tap','.addsh',function(){
 					this.nextElementSibling.style.display = 'flex'
 				})
-				m('.modal').on('tap','.close',function(){
+				$('.close').on('tap',function(){
 					this.parentNode.parentNode.parentNode.style.display = 'none'
 				})
-				m('.mui-content').on('tap','.modal',function(){
-					this.style.display = 'none'
-				})
-				m('.modal').on('tap','.content',function(e){
-					e.stopPropagation()
-				})
+				// $('.modal').on('tap',function(){
+				// 	$(this).hide()
+				// })
+				// $('.content').on('tap',function(e){
+				// 	e.stopPropagation();
+				// })
+				
 				// 收款账号
 				$('.acc .edit').click(function(){
 					$(this).parents('.con').find('.modal').css('display','flex')
@@ -61,4 +62,8 @@
 				$('.gl .del').click(function(){
 					m.confirm('确定要删除此记录吗')
 				})
+				// $('.modal').click(function(){
+				// 	console.log($(this).parents('.modal'))
+				// 	$(this).parents('.modal').css('display','none')
+				// })
 			}(mui, document));
