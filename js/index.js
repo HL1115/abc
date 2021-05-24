@@ -49,8 +49,8 @@
 				$('.acc .edit').click(function(){
 					$(this).parents('.con').find('.modal').css('display','flex')
 				})
-				$('.acc .del').click(function(){
-					m.confirm('确定要删除账号吗')
+				$('.del').click(function(){
+					m.confirm('确定要删除此条记录吗')
 				})
 				// 管理员
 				$('.gl .edit').click(function(){
@@ -66,4 +66,24 @@
 				// 	console.log($(this).parents('.modal'))
 				// 	$(this).parents('.modal').css('display','none')
 				// })
+				$('input').click(function(){
+					console.log(this.checked)
+					// this.checked = this.checked
+				})
+				$('.czbtn').click(function(){
+					$(this).parents('.con').find('.cz').css('display','flex')
+				})
+				$('.xgbtn').click(function(){
+					$(this).parents('.con').find('.xg').css('display','flex')
+				})
+				$('.bjbtn').click(function(){
+					$(this).parents('.con').find('.bj').css('display','flex')
+				})
+				$('.selectAll').click(function(){
+					if($(this).find('input')[0].checked){
+						$(this).parent().find('.mui-table-view').find('input').attr('checked',true)
+					}else{
+						$(this).parent().find('.mui-table-view').find('input').removeAttr('checked')
+					}
+				})
 			}(mui, document));

@@ -85,3 +85,27 @@ ul {
 .modal-title span {
 	float: right;
 }
+.selectAll{
+	margin-left: 15px;
+	margin-top: 15px;
+	font-size: 16px;
+}
+.selectAll input{
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin-right: 6px;
+}
+.mycollapse {
+	position: relative;
+}
+.mycollapse input{
+	position: absolute;
+	top: 14px;
+	left: 5px;
+	z-index: 999;
+}
+.mycollapse .mui-navigate-right{
+	text-indent: 10px;
+}
+	
