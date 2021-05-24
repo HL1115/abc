@@ -66,10 +66,6 @@
 				// 	console.log($(this).parents('.modal'))
 				// 	$(this).parents('.modal').css('display','none')
 				// })
-				$('input').click(function(){
-					console.log(this.checked)
-					// this.checked = this.checked
-				})
 				$('.czbtn').click(function(){
 					$(this).parents('.con').find('.cz').css('display','flex')
 				})
@@ -81,9 +77,15 @@
 				})
 				$('.selectAll').click(function(){
 					if($(this).find('input')[0].checked){
-						$(this).parent().find('.mui-table-view').find('input').attr('checked',true)
+						$(this).parent().find('.mui-table-view').find('input').forEach(function(val){
+							val.checked = true
+						})
+						// $(this).parent().find('.mui-table-view').find('input').attr('checked',true)
 					}else{
-						$(this).parent().find('.mui-table-view').find('input').removeAttr('checked')
+						// $(this).parent().find('.mui-table-view').find('input').removeAttr('checked')
+						$(this).parent().find('.mui-table-view').find('input').forEach(function(val){
+							val.checked = false
+						})
 					}
 				})
 			}(mui, document));
